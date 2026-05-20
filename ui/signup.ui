@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1101</width>
+    <height>870</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+border-image: url(:/wallpaper/images/wallpaperflare.com_wallpaper (2) (1).jpg);
+}
+
+#widget {
+background-color: #fff;
+border-radius: 5px;
+}
+
+QLabel#Welcome {
+color: #fff;
+}
+
+QLabel#label_4 {
+color: #fff;
+}
+QLabel#Started {
+color: black;
+}
+QLabel#SignUp {
+color: black;
+}
+
+QLineEdit {
+border: none;
+border-bottom: 2px solid #cccccc
+}
+
+QLineEdit:focus {
+border-bottom: 2px solid #295ba4
+}
+
+QScrollArea {
+background-color: #fff;
+}
+
+
+
+QPushButton:hover#LoginNow
+{
+     color: gray;
+     background-color: rgb(224, 238, 249);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0" rowspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0,0,0">
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="Welcome">
+          <property name="font">
+           <font>
+            <pointsize>26</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Welcome to SHC Airlines</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Travel Anywhere, Anytime.</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>105</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="2" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="SignUp">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Already have an account?</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="LoginNow">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Log In Now!</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="Started">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Let's Get Started!</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>518</width>
+              <height>747</height>
+             </rect>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="1" rowspan="2">
+              <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,0,0,0">
+               <property name="spacing">
+                <number>20</number>
+               </property>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <property name="spacing">
+                  <number>15</number>
+                 </property>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout">
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="Email_4">
+                     <property name="font">
+                      <font>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Full Name</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="FullName">
+                     <property name="minimumSize">
+                      <size>
+                       <width>250</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>13</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="Email_5">
+                     <property name="font">
+                      <font>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Username</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="Username">
+                     <property name="minimumSize">
+                      <size>
+                       <width>250</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>13</pointsize>
+                      </font>
+                     </property>
+                     <property name="echoMode">
+                      <enum>QLineEdit::Normal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="Password_5">
+                     <property name="font">
+                      <font>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Create Password (Don't share it with anyone)</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="Password">
+                     <property name="font">
+                      <font>
+                       <pointsize>13</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="echoMode">
+                      <enum>QLineEdit::Normal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="Password_4">
+                     <property name="font">
+                      <font>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>National ID</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="NationalID">
+                     <property name="font">
+                      <font>
+                       <pointsize>13</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="echoMode">
+                      <enum>QLineEdit::Normal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_11">
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="Password_9">
+                     <property name="font">
+                      <font>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Phone Number</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="PhoneNumber">
+                     <property name="font">
+                      <font>
+                       <pointsize>13</pointsize>
+                      </font>
+                     </property>
+                     <property name="echoMode">
+                      <enum>QLineEdit::Normal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_16">
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="Password_14">
+                     <property name="font">
+                      <font>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Passport Number</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="PassportNumber">
+                     <property name="font">
+                      <font>
+                       <pointsize>13</pointsize>
+                      </font>
+                     </property>
+                     <property name="echoMode">
+                      <enum>QLineEdit::Normal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_12">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="Password_10">
+                   <property name="font">
+                    <font>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Date of Birth</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDateEdit" name="BirthDate">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>13</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="Password_12">
+                   <property name="font">
+                    <font>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Gender</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="Gender">
+                   <property name="font">
+                    <font>
+                     <pointsize>13</pointsize>
+                    </font>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Male</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Female</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_15">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="Password_13">
+                   <property name="font">
+                    <font>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Main Nationality</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="Nationality">
+                   <property name="font">
+                    <font>
+                     <pointsize>13</pointsize>
+                    </font>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Afghan (Afghanistan)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Albanian (Albania)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Algerian (Algeria)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>American (United States)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Argentine (Argentina)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Australian (Australia)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Austrian (Austria)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Bahraini (Bahrain)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Belgian (Belgium)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Brazilian (Brazil)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>British (United Kingdom)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Canadian (Canada)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Chinese (China)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Colombian (Colombia)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Croatian (Croatia)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Cypriot (Cyprus)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Czech (Czech Republic)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Danish (Denmark)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Dutch (Netherlands)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Egyptian (Egypt)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Emirati (United Arab Emirates - UAE)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Finnish (Finland)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>French (France)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>German (Germany)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Greek (Greece)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Hungarian (Hungary)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Indian (India)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Iraqi (Iraq)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Italian (Italy)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Japanese (Japan)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Jordanian (Jordan)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Kuwaiti (Kuwait)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Lebanese (Lebanon)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Libyan (Libya)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Mauritanian (Mauritania)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Mexican (Mexico)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Moroccan (Morocco)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>New Zealander (New Zealand)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Omani (Oman)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Palestinian (Palestine)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Polish (Poland)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Portuguese (Portugal)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Qatari (Qatar)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Russian (Russia)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Saudi (Saudi Arabia)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Spanish (Spain)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Syrian (Syria)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Turkish (Turkey)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Yemeni (Yemen)</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="CreateAccount">
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="text">
+                  <string>Create Account</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>184</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="4">
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>183</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="2" column="2" colspan="2">
+              <spacer name="verticalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>151</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
